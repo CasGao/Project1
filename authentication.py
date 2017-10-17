@@ -15,7 +15,8 @@ def login(username, password):
             return True
 
         return False
-    except Exception as exc:
+    #except Exception as exc:
+    except Exception, exc:
         print('I can\'t authenticate you.')
         return False
 
